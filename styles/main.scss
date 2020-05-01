@@ -1,0 +1,212 @@
+:root {
+  --color-green: #06c167;
+  --color-grey: rgb(238, 238, 238);
+  --color-grey-darker: rgb(84, 84, 84);
+}
+@font-face {
+  font-family: circular;
+  src: url(../fonts/CircularStd-Book.ttf);
+}
+
+@font-face {
+  font-family: circularbold;
+  src: url(../fonts/CircularStd-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html {
+  -webkit-font-smoothing: antialiased !important;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body,
+input,
+button {
+  font-family: circular;
+}
+.container {
+  width: calc(100% - 120px);
+  margin: 0 auto;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.circle {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-grey);
+  border-radius: 50%;
+}
+.smallText {
+  font-size: 0.8rem;
+  color: var(--color-grey-darker);
+}
+header {
+  .logo {
+    h1 {
+      font-weight: 300;
+      span {
+        font-family: circularbold;
+        font-weight: 700;
+        color: var(--color-green);
+      }
+    }
+  }
+}
+.searchBar {
+  margin-left: auto;
+}
+.header-option {
+  padding-left: 5rem;
+  letter-spacing: 0.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  svg {
+      margin-right: 1rem;
+      display: inline-flex;
+      //fill: black;
+      //color: white;
+  }
+}
+.currentDetails,
+.searchBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.options {
+  padding: 2rem 0;
+  .options-btn {
+    display: inline-flex;
+    background: var(--color-grey);
+    margin-right: 10px;
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    border: 0;
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    align-items: center;
+    svg {
+        margin-right: 0.4rem;
+        max-width: 20px;
+    }
+    &.selected {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+
+main.listings {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+  section {
+    margin-bottom: 4rem;
+    width: 100%;
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .header-title {
+        h2 {
+          font-weight: 400;
+          font-size: 1.8rem;
+          margin-bottom: 0.5rem;
+          margin-top: 0;
+        }
+        span {
+          color: var(--color-grey-darker);
+        }
+      }
+      .header-viewOptions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto 0;
+        .viewAll {
+          color: var(--color-green);
+          padding-right: 2rem;
+        }
+        .viewActions {
+          .arrow {
+            border-radius: 50%;
+            opacity: 0.4;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            &.darker,
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .listings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      padding-top: 2rem;
+      .listings-grid-element {
+        .image {
+          height: 240px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .listing-header {
+          padding-top: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #ddd;
+          padding: 1rem 0;
+          .text-title h3 {
+            font-weight: 400;
+            padding-bottom: 0.2rem;
+            margin-top: 0;
+          }
+          .text-info span {
+            font-weight: 200;
+            font-size: 0.9rem;
+          }
+          .rating {
+            span {
+              font-size: 1rem;
+              color: black;
+            }
+          }
+        }
+        .out-text {
+          padding: 0.6rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+    .listings-grid {
+        grid-template-columns: 1fr;
+    }
+}

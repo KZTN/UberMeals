@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html {
+    -webkit-font-smoothing: antialiased !important;
+}
+html, body, #root {
+    height: 100%;
+}
+body, input, button {
+    font-family: sans-serif;
+}
+
+
+/*# sourceMappingURL=/main.d2070829.css.map */

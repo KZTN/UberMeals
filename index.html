@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <title>UberEats</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Header -->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <h1>Uber<span>Eats</span></h1>
+          </div>
+          <div class="currentDetails">
+            <div class="header-option">
+              <i data-feather="map-pin"></i>
+              <span>London</span>
+            </div>
+            <div class="header-option">
+                <i data-feather="clock"></i>
+              <span>Deliver now</span>
+            </div>
+          </div>
+          <div class="searchBar">
+            <div class="header-option">
+                <i data-feather="search"></i>
+              Search
+            </div>
+            <div class="header-option">
+              Sign in
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Options -->
+      <div class="options">
+        <div class="container">
+          <button class="options-btn selected"><i data-feather="shopping-cart"></i><span>Delivery</span></button>
+          <button class="options-btn"><i data-feather="box"></i><span>Pick-up</span></button>
+        </div>
+      </div>
+      <!-- Listing -->
+      <main class="listings">
+        <div class="container">
+          <section>
+            <header>
+              <div class="header-title">
+                <h2>When you're hungry now</h2>
+                <span>The fastest food to your door</span>
+              </div>
+              <div class="header-viewOptions">
+                <div class="viewAll">
+                  <span>View all</span>
+                </div>
+                <div class="viewActions">
+                  <span class="arrow circle left">
+                    <i data-feather="arrow-left"></i>
+                  </span>
+                  <span class="arrow circle right darker">
+                    <i data-feather="arrow-right"></i>
+                  </span>
+                </div>
+              </div>
+            </header>
+            <div class="listings-grid">
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    alt="listing pic"
+                  />
+                </div>
+                <div class="listing-header">
+                  <div class="listing-text-elements">
+                    <div class="text-title">
+                      <h3>German Doner Kebab(Camden)</h3>
+                    </div>
+                    <div class="text-info">
+                      <span>£4.99 <i data-feather="shopping-cart"></i><span>delivery</span> fee • 20-30 MINS • £</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="out-text">
+                  <span class="smallText"
+                    >German • Middle Eastern • Halal • Burder • Fast Food</span
+                  >
+                </div>
+              </div>
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    alt="listing pic"
+                  />
+                </div>
+                <div class="listing-header">
+                  <div class="listing-text-elements">
+                    <div class="text-title">
+                      <h3>Marley's (New Kent Road)</h3>
+                    </div>
+                    <div class="text-info">
+                      <span>£4.99 <i data-feather="shopping-cart"></i><span>delivery</span> fee • 15-20 MINS • ££</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.0</span>
+                  </div>
+                </div>
+                <div class="out-text">
+                  <span class="smallText">Chicken + Fast Food</span>
+                </div>
+              </div>
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1543807669-0d0730e95cb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    alt="listing pic"
+                  />
+                </div>
+                <div class="listing-header">
+                  <div class="listing-text-elements">
+                    <div class="text-title">
+                      <h3>Chicken Cottage (Holdoborn)</h3>
+                    </div>
+                    <div class="text-info">
+                      <span>£2.99 <i data-feather="shopping-cart"></i><span>delivery</span> fee • 20-20 MINS • £</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="out-text">
+                  <span class="smallText"
+                    >Chicken • Fast Food • Halal • Burger • Wings</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <header>
+              <div class="header-title">
+                <h2>Special offers</h2>
+                <span>Limited avaiability</span>
+              </div>
+              <div class="header-viewOptions">
+                <div class="viewAll">
+                  <span>View all</span>
+                </div>
+                <div class="viewActions">
+                  <span class="arrow circle left">
+                    <i data-feather="arrow-left"></i>
+                  </span>
+                  <span class="arrow circle right darker">
+                    <i data-feather="arrow-right"></i>
+                  </span>
+                </div>
+              </div>
+            </header>
+            <div class="listings-grid">
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                    alt="listing pic"
+                  />
+                </div>
+                <div class="listing-header">
+                  <div class="listing-text-elements">
+                    <div class="text-title">
+                      <h3>Pizza Hut <i data-feather="shopping-cart"></i><span>Delivery</span> (Kennington Road)</h3>
+                    </div>
+                    <div class="text-info">
+                      <span>£3.99 <i data-feather="shopping-cart"></i><span>delivery</span> fee • 30-40 MINS • ££</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">3.6</span>
+                  </div>
+                </div>
+                <div class="out-text">
+                  <span class="smallText"
+                    >German • Middle Eastern • Halal • Burder • Fast Food</span
+                  >
+                </div>
+              </div>
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    alt="listing pic"
+                  />
+                </div>
+                <div class="listing-header">
+                  <div class="listing-text-elements">
+                    <div class="text-title">
+                      <h3>Marley's (New Kent Road)</h3>
+                    </div>
+                    <div class="text-info">
+                      <span>£4.99 <i data-feather="shopping-cart"></i><span>delivery</span> fee • 15-20 MINS • ££</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.0</span>
+                  </div>
+                </div>
+                <div class="out-text">
+                  <span class="smallText">Chicken + Fast Food</span>
+                </div>
+              </div>
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1543807669-0d0730e95cb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    alt="listing pic"
+                  />
+                </div>
+                <div class="listing-header">
+                  <div class="listing-text-elements">
+                    <div class="text-title">
+                      <h3>Chicken Cottage (Holdoborn)</h3>
+                    </div>
+                    <div class="text-info">
+                      <span>£2.99 <i data-feather="shopping-cart"></i><span>delivery</span> fee • 20-20 MINS • £</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="out-text">
+                  <span class="smallText"
+                    >Chicken • Fast Food • Halal • Burger • Wings</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <header>
+              <div class="header-title">
+                <h2>Popular near you</h2>
+                <span></span>
+              </div>
+              <div class="header-viewOptions">
+                <div class="viewAll">
+                  <span>View all</span>
+                </div>
+                <div class="viewActions">
+                  <span class="arrow circle left">
+                    <i data-feather="arrow-left"></i>
+                  </span>
+                  <span class="arrow circle right darker">
+                    <i data-feather="arrow-right"></i>
+                  </span>
+                </div>
+              </div>
+            </header>
+            <div class="listings-grid">
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    alt="listing pic"
+                  />
+                </div>
+                <div class="listing-header">
+                  <div class="listing-text-elements">
+                    <div class="text-title">
+                      <h3>German Doner Kebab(Camden)</h3>
+                    </div>
+                    <div class="text-info">
+                      <span>£4.99 <i data-feather="shopping-cart"></i><span>delivery</span> fee • 20-30 MINS • £</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="out-text">
+                  <span class="smallText"
+                    >German • Middle Eastern • Halal • Burder • Fast Food</span
+                  >
+                </div>
+              </div>
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    alt="listing pic"
+                  />
+                </div>
+                <div class="listing-header">
+                  <div class="listing-text-elements">
+                    <div class="text-title">
+                      <h3>Marley's (New Kent Road)</h3>
+                    </div>
+                    <div class="text-info">
+                      <span>£4.99 <i data-feather="shopping-cart"></i><span>delivery</span> fee • 15-20 MINS • ££</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.0</span>
+                  </div>
+                </div>
+                <div class="out-text">
+                  <span class="smallText">Chicken + Fast Food</span>
+                </div>
+              </div>
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1467453678174-768ec283a940?ixlib=rb-1.2.1&auto=format&fit=crop&w=1328&q=80"
+                    alt="listing pic"
+                  />
+                </div>
+                <div class="listing-header">
+                  <div class="listing-text-elements">
+                    <div class="text-title">
+                      <h3>Chicken Cottage (Holdoborn)</h3>
+                    </div>
+                    <div class="text-info">
+                      <span>£2.99 <i data-feather="shopping-cart"></i><span>delivery</span> fee • 20-20 MINS • £</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="out-text">
+                  <span class="smallText"
+                    >Chicken • Fast Food • Halal • Burger • Wings</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
