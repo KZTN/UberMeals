@@ -197,7 +197,15 @@ main.listings section .listings-grid .listings-grid-element .out-text {
 }
 
 @media (max-width: 650px) {
-  .listings-grid {
+  .options .container {
+    justify-content: space-between;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  main.listings section .listings-grid {
     grid-template-columns: 1fr;
   }
 }
