@@ -15,7 +15,7 @@ npm 6.14.4 or yarn 1.22.4
 parcel (as web server bundle)
 git
 ```
-> See all instructions to donwload parcel here: https://parceljs.org/getting_started.html
+> See all instructions to download parcel here: https://parceljs.org/getting_started.html
 
 ### Installing the project🚀
 
