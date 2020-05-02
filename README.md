@@ -35,7 +35,8 @@ cd UberMeals
 Getting project dependencies & Run the project:
 
 ```bash
-parcel serve index.html --port 1111```
+parcel serve index.html --port 1111
+```
 
 
 Visit http://localhost:1111/ with your browser to see the result. 🎉
