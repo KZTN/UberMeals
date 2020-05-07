@@ -1,4 +1,8 @@
 {
+  "name": "ubermeals",
+  "homepage": "https://kztn.github.io/Ubermeals",
+  "version": "0.1.0",
+  "private": true,
   "devDependencies": {
     "sass": "^1.26.5"
   }
